@@ -63,12 +63,17 @@ private:
     // Beam density (kg / m^2)
     double m_beam_density;
 
+    // Gravity acceleration (m/s^2)
+    const double m_grav = 9.80665;
 private:
     // Flexible body mass matrix
     arma::dmat m_mass;
     
     // Flexible body stiffness matrix
     arma::dmat m_stiffness;
+
+    // Flexible body external force 
+    arma::dvec m_qforce;
 
 private:
     // Mass matrix of flexible body calculation 
@@ -78,6 +83,8 @@ private:
     void stiffness_matrix_calculation(void); 
 
     // External force calculation
+    void external_force_calculation(double t, arma::dvec q, arma::dvec q_dot);
+
 private:
     // Locator vectors
     arma::ivec m_lu, m_lv, m_lw;
@@ -86,7 +93,7 @@ private:
     arma::dmat m_lu_mat, m_lv_mat, m_lw_mat; 
 
     // Shape function 
-    arma::dmat shape_function(void);
+    arma::dmat shape_function(double x);
 
 private:
     // Natural frequency y dircetion
@@ -108,8 +115,12 @@ private:
     // External force body frame (position l)
     arma::dvec external_force(double t, arma::dvec q, arma::dvec q_dot);
 
-    // External traction body frame
-    arma::dvec external_traction(double t, arma::dvec q, arma::dvec q_dot);
+    // External traction force
+    arma::dvec external_traction_force(double t, arma::dvec q, arma::dvec q_dot);
+
+    // Distributed load body frame
+    arma::dvec distributed_load(double t, double x, arma::dvec q, arma::dvec q_dot);
+
 };
 
 

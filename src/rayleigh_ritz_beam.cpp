@@ -51,7 +51,6 @@ RayleighRitzBeam::RayleighRitzBeam(uint axial_dofs, uint bending_y_dofs, uint be
     m_lv_mat = dm::locator_matrix(m_lv, m_dofs);
     m_lw_mat = dm::locator_matrix(m_lw, m_dofs);
 
-
     // Initialization of frequencies vectors 
     m_u_freq = arma::zeros(m_axial_dofs);
     m_v_freq = arma::zeros(m_bending_y_dofs);
@@ -62,6 +61,13 @@ RayleighRitzBeam::RayleighRitzBeam(uint axial_dofs, uint bending_y_dofs, uint be
     
     // Calculate stiffness matrix 
     stiffness_matrix_calculation();
+}
+
+
+void RayleighRitzBeam::update(double t, arma::dvec q, arma::dvec q_dot)
+{
+    // Update external forces 
+    external_force_calculation(t, q, q_dot);
 }
 
 
@@ -129,10 +135,35 @@ void RayleighRitzBeam::stiffness_matrix_calculation(void)
         m_lw_mat.t() * kw * m_lw_mat;
 }
 
+
+void RayleighRitzBeam::external_force_calculation(double t, arma::dvec q,
+    arma::dvec q_dot)
+{
+    // Shape functions in l and l / 2
+    arma::dmat phi_l = shape_function(m_beam_length);
+    arma::dmat phi_l_2 = shape_function(m_beam_length / 2.0); 
+
+    // External force
+    arma::dvec fb_f = external_force(t, q, q_dot);
+
+    // External traction force
+    arma::dvec p_f = external_traction_force(t, q, q_dot);
+
+    // Weight
+    arma::dvec w_f = {0.0, 0.0, - m_beam_mass * m_grav};
+
+    m_qforce = phi_l * fb_f + phi_l_2 * w_f + p_f; 
+}
+
+
 arma::dmat RayleighRitzBeam::shape_function(double x)
 {
 
-    for (int i = 0)
+    for (uint i = 0; i < m_axial_dofs; i++)
+    {
+
+    }
+
     // /****** Axial direction ******/
     // // Magnitude
     // double un_hat = sqrt(2.0 / m_beam_mass);
@@ -142,4 +173,42 @@ arma::dmat RayleighRitzBeam::shape_function(double x)
     // // Mode function 
     // double un_tilde = sin(un)
 
+}
+
+// External force body frame (position l)
+arma::dvec RayleighRitzBeam::external_force(double t, arma::dvec q, arma::dvec q_dot)
+{
+    double fbx = 0.0;
+    double fby = 0.0;
+    double fbz = 0.0;
+
+   arma::dvec fb_f = {fbx, fby, fbz};
+
+   return fb_f;
+}
+
+
+// External traction force
+arma::dvec RayleighRitzBeam::external_traction_force(double t, arma::dvec q,
+    arma::dvec q_dot)
+{
+    uint grid_size = 100;
+    double dx = m_beam_length / (double) grid_size;
+    
+    // NUMERICAL INTEGRATION
+}
+
+
+// Distributed load body frame
+arma::dvec RayleighRitzBeam::distributed_load(double t, double x,
+    arma::dvec q, arma::dvec q_dot)
+{
+
+    double px = 0.0;
+    double py = 0.0;
+    double pz = 0.0;
+
+   arma::dvec p = {px, py, pz};
+
+   return p;
 }
