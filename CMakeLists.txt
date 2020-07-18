@@ -25,6 +25,9 @@ set(ALL_LIBS
   ${ARMADILLO_LIBRARIES} ${Boost_LIBRARIES})
 
 set(SOURCES
+  ./src/dynamics_math.cpp
+  ./src/modes_magnitude.cpp
+  ./src/rayleigh_ritz_beam.cpp
     )
 
   

@@ -81,14 +81,92 @@ CMakeFiles/main.dir/main.cpp.o.provides: CMakeFiles/main.dir/main.cpp.o.requires
 CMakeFiles/main.dir/main.cpp.o.provides.build: CMakeFiles/main.dir/main.cpp.o
 
 
+CMakeFiles/main.dir/src/dynamics_math.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/dynamics_math.cpp.o: ../src/dynamics_math.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/dynamics_math.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/dynamics_math.cpp.o -c /home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/src/dynamics_math.cpp
+
+CMakeFiles/main.dir/src/dynamics_math.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/dynamics_math.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/src/dynamics_math.cpp > CMakeFiles/main.dir/src/dynamics_math.cpp.i
+
+CMakeFiles/main.dir/src/dynamics_math.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/dynamics_math.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/src/dynamics_math.cpp -o CMakeFiles/main.dir/src/dynamics_math.cpp.s
+
+CMakeFiles/main.dir/src/dynamics_math.cpp.o.requires:
+
+.PHONY : CMakeFiles/main.dir/src/dynamics_math.cpp.o.requires
+
+CMakeFiles/main.dir/src/dynamics_math.cpp.o.provides: CMakeFiles/main.dir/src/dynamics_math.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/dynamics_math.cpp.o.provides.build
+.PHONY : CMakeFiles/main.dir/src/dynamics_math.cpp.o.provides
+
+CMakeFiles/main.dir/src/dynamics_math.cpp.o.provides.build: CMakeFiles/main.dir/src/dynamics_math.cpp.o
+
+
+CMakeFiles/main.dir/src/modes_magnitude.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/modes_magnitude.cpp.o: ../src/modes_magnitude.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/modes_magnitude.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/modes_magnitude.cpp.o -c /home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/src/modes_magnitude.cpp
+
+CMakeFiles/main.dir/src/modes_magnitude.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/modes_magnitude.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/src/modes_magnitude.cpp > CMakeFiles/main.dir/src/modes_magnitude.cpp.i
+
+CMakeFiles/main.dir/src/modes_magnitude.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/modes_magnitude.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/src/modes_magnitude.cpp -o CMakeFiles/main.dir/src/modes_magnitude.cpp.s
+
+CMakeFiles/main.dir/src/modes_magnitude.cpp.o.requires:
+
+.PHONY : CMakeFiles/main.dir/src/modes_magnitude.cpp.o.requires
+
+CMakeFiles/main.dir/src/modes_magnitude.cpp.o.provides: CMakeFiles/main.dir/src/modes_magnitude.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/modes_magnitude.cpp.o.provides.build
+.PHONY : CMakeFiles/main.dir/src/modes_magnitude.cpp.o.provides
+
+CMakeFiles/main.dir/src/modes_magnitude.cpp.o.provides.build: CMakeFiles/main.dir/src/modes_magnitude.cpp.o
+
+
+CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.o: ../src/rayleigh_ritz_beam.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.o -c /home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/src/rayleigh_ritz_beam.cpp
+
+CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/src/rayleigh_ritz_beam.cpp > CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.i
+
+CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/src/rayleigh_ritz_beam.cpp -o CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.s
+
+CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.o.requires:
+
+.PHONY : CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.o.requires
+
+CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.o.provides: CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.o.provides.build
+.PHONY : CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.o.provides
+
+CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.o.provides.build: CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.o
+
+
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/main.cpp.o"
+"CMakeFiles/main.dir/main.cpp.o" \
+"CMakeFiles/main.dir/src/dynamics_math.cpp.o" \
+"CMakeFiles/main.dir/src/modes_magnitude.cpp.o" \
+"CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
 main: CMakeFiles/main.dir/main.cpp.o
+main: CMakeFiles/main.dir/src/dynamics_math.cpp.o
+main: CMakeFiles/main.dir/src/modes_magnitude.cpp.o
+main: CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: /usr/lib/x86_64-linux-gnu/libarmadillo.so
 main: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
@@ -96,7 +174,7 @@ main: /usr/lib/x86_64-linux-gnu/libboost_system.so
 main: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
 main: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +183,9 @@ CMakeFiles/main.dir/build: main
 .PHONY : CMakeFiles/main.dir/build
 
 CMakeFiles/main.dir/requires: CMakeFiles/main.dir/main.cpp.o.requires
+CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/dynamics_math.cpp.o.requires
+CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/modes_magnitude.cpp.o.requires
+CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.o.requires
 
 .PHONY : CMakeFiles/main.dir/requires
 

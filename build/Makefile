@@ -150,6 +150,87 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/dynamics_math.o: src/dynamics_math.cpp.o
+
+.PHONY : src/dynamics_math.o
+
+# target to build an object file
+src/dynamics_math.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/dynamics_math.cpp.o
+.PHONY : src/dynamics_math.cpp.o
+
+src/dynamics_math.i: src/dynamics_math.cpp.i
+
+.PHONY : src/dynamics_math.i
+
+# target to preprocess a source file
+src/dynamics_math.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/dynamics_math.cpp.i
+.PHONY : src/dynamics_math.cpp.i
+
+src/dynamics_math.s: src/dynamics_math.cpp.s
+
+.PHONY : src/dynamics_math.s
+
+# target to generate assembly for a file
+src/dynamics_math.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/dynamics_math.cpp.s
+.PHONY : src/dynamics_math.cpp.s
+
+src/modes_magnitude.o: src/modes_magnitude.cpp.o
+
+.PHONY : src/modes_magnitude.o
+
+# target to build an object file
+src/modes_magnitude.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/modes_magnitude.cpp.o
+.PHONY : src/modes_magnitude.cpp.o
+
+src/modes_magnitude.i: src/modes_magnitude.cpp.i
+
+.PHONY : src/modes_magnitude.i
+
+# target to preprocess a source file
+src/modes_magnitude.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/modes_magnitude.cpp.i
+.PHONY : src/modes_magnitude.cpp.i
+
+src/modes_magnitude.s: src/modes_magnitude.cpp.s
+
+.PHONY : src/modes_magnitude.s
+
+# target to generate assembly for a file
+src/modes_magnitude.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/modes_magnitude.cpp.s
+.PHONY : src/modes_magnitude.cpp.s
+
+src/rayleigh_ritz_beam.o: src/rayleigh_ritz_beam.cpp.o
+
+.PHONY : src/rayleigh_ritz_beam.o
+
+# target to build an object file
+src/rayleigh_ritz_beam.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.o
+.PHONY : src/rayleigh_ritz_beam.cpp.o
+
+src/rayleigh_ritz_beam.i: src/rayleigh_ritz_beam.cpp.i
+
+.PHONY : src/rayleigh_ritz_beam.i
+
+# target to preprocess a source file
+src/rayleigh_ritz_beam.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.i
+.PHONY : src/rayleigh_ritz_beam.cpp.i
+
+src/rayleigh_ritz_beam.s: src/rayleigh_ritz_beam.cpp.s
+
+.PHONY : src/rayleigh_ritz_beam.s
+
+# target to generate assembly for a file
+src/rayleigh_ritz_beam.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.s
+.PHONY : src/rayleigh_ritz_beam.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +243,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/dynamics_math.o"
+	@echo "... src/dynamics_math.i"
+	@echo "... src/dynamics_math.s"
+	@echo "... src/modes_magnitude.o"
+	@echo "... src/modes_magnitude.i"
+	@echo "... src/modes_magnitude.s"
+	@echo "... src/rayleigh_ritz_beam.o"
+	@echo "... src/rayleigh_ritz_beam.i"
+	@echo "... src/rayleigh_ritz_beam.s"
 .PHONY : help
 
 

@@ -4,9 +4,10 @@ class NeedleProperties
 {
 public:
     // Handle geometry
-    static double get_handle_radius(void) { return m_radius; }
-    static double get_handle_height(void) { return m_height; }
+    static double get_handle_radius(void) { return m_handle_radius; }
+    static double get_handle_length(void) { return m_handle_length; }
     static int get_handle_side_count(void) { return m_side_count; }
+    static int get_handle_mass(void) { return m_handle_mass; }
 
     // Needle geometry
     static double get_needle_offset_z(void) {return m_needle_lz; }
@@ -21,10 +22,11 @@ public:
 
 protected:
     // Handle geometry
-    static constexpr double m_radius = 1.7e-2; // Handle radius (m) 
-    static constexpr double m_height = 1.53e-1; // Handle height (m)
+    static constexpr double m_handle_radius = 1.7e-2; // Handle radius (m) 
+    static constexpr double m_handle_length = 1.53e-1; // Handle height (m)
     static constexpr int m_side_count = 20; // Side numbers for cylinder
-    
+    static constexpr double m_handle_mass = 9e-2; // Handle mass (kg)
+
     // Needle geometry
     static constexpr double m_needle_lz = 7.67e-3; // Needle offset z direction (m)
     static constexpr double m_needle_lx = 7.65e-2; // Needle offset x direction (m)
