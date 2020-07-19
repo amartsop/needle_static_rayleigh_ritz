@@ -28,6 +28,7 @@ set(SOURCES
   ./src/dynamics_math.cpp
   ./src/modes_magnitude.cpp
   ./src/rayleigh_ritz_beam.cpp
+  ./src/euler_rotations.cpp
     )
 
   

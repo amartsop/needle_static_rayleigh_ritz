@@ -9,8 +9,14 @@ class ModesMagnitude
 public:
     ModesMagnitude() {};
 
+    // Magnitude R
     static double r(double l, double bn);
+
+    // Magnitude R_tilde
     static double r_tilde(double l, double bn);
+
+    // Coefficient
+    double static jn(double l, double bn);
 
 private:
     // Integrals
@@ -25,8 +31,6 @@ private:
     double static a9n(double l, double bn);
     double static a10n(double l, double bn);
 
-    // Coefficient
-    double static jn(double l, double bn);
 };
 
 

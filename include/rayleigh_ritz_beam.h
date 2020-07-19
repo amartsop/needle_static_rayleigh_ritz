@@ -12,17 +12,26 @@ class RayleighRitzBeam : public NeedleProperties
 public:
     RayleighRitzBeam(uint axial_dofs, uint bending_y_dofs, uint bending_z_dofs);
 
+    // Calculate system model function 
+    arma::dvec calculate(arma::dvec state_vector, double t);
+
     // Mass matrix getter
     arma::dmat get_mass_matrix(void){ return m_mass; }
     
     // Stiffness matrix getter
     arma::dmat get_stiffness_matrix(void){ return m_stiffness; }
 
-    // Update flexible body matrices and force vector
-    void update(double t, arma::dvec q, arma::dvec q_dot);
+    // External force getter 
+    arma::dvec get_external_force(void){ return m_qforce; }
 
     // Get system size 
-    uint get_system_size(void) { return m_dofs; }
+    uint get_model_size(void) { return m_dofs; }
+
+    // Get system deflection 
+    arma::dvec get_deflection(double ksi, arma::dvec qf);
+
+    // Get beam length
+    double get_beam_length(void) { return m_beam_length; }
 
 private:
 
@@ -65,6 +74,7 @@ private:
 
     // Gravity acceleration (m/s^2)
     const double m_grav = 9.80665;
+
 private:
     // Flexible body mass matrix
     arma::dmat m_mass;
@@ -110,7 +120,9 @@ private:
 
     // Bending z frequencies (rad / sec)
     arma::dvec m_w_freq;
-
+    
+    // Wave coefficient 
+    double m_c;
 private:
     // External force body frame (position l)
     arma::dvec external_force(double t, arma::dvec q, arma::dvec q_dot);

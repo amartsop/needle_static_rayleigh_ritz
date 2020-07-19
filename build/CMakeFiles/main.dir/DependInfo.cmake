@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/main.cpp" "/home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/build/CMakeFiles/main.dir/main.cpp.o"
   "/home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/src/dynamics_math.cpp" "/home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/build/CMakeFiles/main.dir/src/dynamics_math.cpp.o"
+  "/home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/src/euler_rotations.cpp" "/home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/build/CMakeFiles/main.dir/src/euler_rotations.cpp.o"
   "/home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/src/modes_magnitude.cpp" "/home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/build/CMakeFiles/main.dir/src/modes_magnitude.cpp.o"
   "/home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/src/rayleigh_ritz_beam.cpp" "/home/thanos/Desktop/PhDDevelopment/MastersDissertation/Rayleigh_Ritz/needle_static/build/CMakeFiles/main.dir/src/rayleigh_ritz_beam.cpp.o"
   )

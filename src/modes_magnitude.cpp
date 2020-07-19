@@ -44,7 +44,7 @@ double ModesMagnitude::a2n(double l, double bn)
 // Integral A3n
 double ModesMagnitude::a3n(double l, double bn)
 {
-    return sin(2.0 * bn * l) / (4.0 * bn) - (l / 2.0);
+    return sinh(2.0 * bn * l) / (4.0 * bn) - (l / 2.0);
 }
 
 // Integral A4n
@@ -86,7 +86,7 @@ double ModesMagnitude::a9n(double l, double bn)
 // Integral A10n
 double ModesMagnitude::a10n(double l, double bn)
 {
-    return (cosh(2.0 * bn * l) - 1.0) / (4.0 * bn);
+    return pow(sinh(bn * l), 2.0) / (2.0 * bn);
 }
 
 // Coefficient 

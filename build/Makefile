@@ -177,6 +177,33 @@ src/dynamics_math.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/dynamics_math.cpp.s
 .PHONY : src/dynamics_math.cpp.s
 
+src/euler_rotations.o: src/euler_rotations.cpp.o
+
+.PHONY : src/euler_rotations.o
+
+# target to build an object file
+src/euler_rotations.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/euler_rotations.cpp.o
+.PHONY : src/euler_rotations.cpp.o
+
+src/euler_rotations.i: src/euler_rotations.cpp.i
+
+.PHONY : src/euler_rotations.i
+
+# target to preprocess a source file
+src/euler_rotations.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/euler_rotations.cpp.i
+.PHONY : src/euler_rotations.cpp.i
+
+src/euler_rotations.s: src/euler_rotations.cpp.s
+
+.PHONY : src/euler_rotations.s
+
+# target to generate assembly for a file
+src/euler_rotations.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/euler_rotations.cpp.s
+.PHONY : src/euler_rotations.cpp.s
+
 src/modes_magnitude.o: src/modes_magnitude.cpp.o
 
 .PHONY : src/modes_magnitude.o
@@ -246,6 +273,9 @@ help:
 	@echo "... src/dynamics_math.o"
 	@echo "... src/dynamics_math.i"
 	@echo "... src/dynamics_math.s"
+	@echo "... src/euler_rotations.o"
+	@echo "... src/euler_rotations.i"
+	@echo "... src/euler_rotations.s"
 	@echo "... src/modes_magnitude.o"
 	@echo "... src/modes_magnitude.i"
 	@echo "... src/modes_magnitude.s"
